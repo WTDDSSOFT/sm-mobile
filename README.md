@@ -5,12 +5,17 @@
 - Funcionalidade 1: Cadastro de médico - ok
 - Funcionalidade 2: Cadastro de paciente - ok
 - Funcionalidade 3: Realizar atendimento - ok
-- Funcionalidade 4: Gerar relatório/tabela dos atendimentos, por data início e data fim; -
+- Funcionalidade 4: Gerar relatório/tabela dos atendimentos, por data início e data fim.
 - Funcionalidade 5: Integrações via json - ok.
 
 **Desafio 01: Modelar o banco para atender os requisitos**. -ok
+  - Banco de dados modelado de acordo com as especificações.
+</br>
 **Desafio 02: Legibilidade do código fonte**. -ok
+</br>
 **Desafio 03: Realizar consulta no banco** -ok
+  -Rotas de authentication, criação de pacientes e medicos, atendimento. 
+</br>
 **Desafio 04: Integração** -ok
   - Construção direto do app.
 
@@ -32,8 +37,8 @@
 # Como Roda  APi & APP.
 
 # Docker
--  docker run --name gostack_samel -e POSTGRES_PASSWORD=docker -p 5433:5432 -d postgres
--  docker ps -a
+- docker run --name gostack_samel -e POSTGRES_PASSWORD=docker -p 5433:5432 -d postgres
+- docker ps -a
 - docker start nome do container.
 
 # APi
