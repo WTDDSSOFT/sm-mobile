@@ -22,5 +22,25 @@
   - Erro ao busca atendimento da api, reject promise.
   - Os cadastros dos medicos foram feitos pelo imsonina.
   - O relatorio e praçe gerado em pdf. ?
+
+### O que melhora.
+  - Estudar e pratica mais o consumo de apis em react-native.
+  - Defini a prototipação mais detalhada antes de coda.
   
+# Como Roda  APi & APP.
+
+# Docker
+-  docker run --name gostack_samel -e POSTGRES_PASSWORD=docker -p 5433:5432 -d postgres
+-  docker ps -a
+- docker start nome do container.
+
+# APi
+ - stacks: Node.js, jwt, typeorm, Rest, express, autenticação dos users e doctors
+- yarn install
+  ## Migrations
+    - yarn typeorm migrations:run
+
+# React-Native
+  yarn start
+  yarn android.
   
