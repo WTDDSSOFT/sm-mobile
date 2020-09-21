@@ -13,7 +13,7 @@
 - Funcionalidade 4: Gerar relatório/tabela dos atendimentos, por data início e data fim;
 - Funcionalidade 5: Integrações via json - ok.
 
-**Desafio 01: Modelar o banco para atender os requisitos**. ok
-**Desafio 02: Legibilidade do código fonte**. ok
-**Desafio 03: Realizar consulta no banco** ok
-**Desafio 04: Integração** ok
+**Desafio 01: Modelar o banco para atender os requisitos**. -ok
+**Desafio 02: Legibilidade do código fonte**. -ok
+**Desafio 03: Realizar consulta no banco** -ok
+**Desafio 04: Integração** -ok
