@@ -3,7 +3,6 @@ import 'react-native-gesture-handler';
 import React from 'react';
 import { StatusBar } from 'react-native';
 
-import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 const { Navigator, Screen } = createBottomTabNavigator();
 
@@ -14,7 +13,7 @@ import Attendance from './Attendance';
 
 const Dashboard: React.FC = () => {
   return (
-    <NavigationContainer>
+    <>
       <StatusBar barStyle="dark-content" backgroundColor="#ffffff" />
       <Navigator
         tabBarOptions={{
@@ -87,7 +86,7 @@ const Dashboard: React.FC = () => {
           }}
         />
       </Navigator>
-    </NavigationContainer>
+    </>
   );
 };
 

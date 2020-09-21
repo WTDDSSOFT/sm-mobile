@@ -14,8 +14,8 @@ interface AuthState {
   user: object;
 }
 interface signInCredentials {
-  name: string;
-  plan: string;
+  email: string;
+  password: string;
 }
 interface AuthContextData {
   user: object;
@@ -46,10 +46,10 @@ const AuthProvider: React.FC = ({ children }) => {
     loadStoregeData();
   }, []);
 
-  const signIn = useCallback(async ({ name, plan }) => {
+  const signIn = useCallback(async ({ email, password }) => {
     const response = await api.post('sessions', {
-      name,
-      plan,
+      email,
+      password,
     });
 
     const { token, user } = response.data;
