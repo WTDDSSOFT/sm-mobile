@@ -7,7 +7,6 @@
   "database":"gostack_samel",
   "entities":[
     "./src/models/*.ts"
-
   ],
   "migrations":[
     "./src/database/migrations/*.ts"

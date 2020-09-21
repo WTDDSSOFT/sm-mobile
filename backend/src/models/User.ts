@@ -18,11 +18,14 @@ class User {
   plan: string;
 
   @Column()
+  email: string;
+
+  @Column()
   phone: string;
-  
+
   @Column()
   password: string;
-  
+
   @CreateDateColumn()
   created_at: Date;
 

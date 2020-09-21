@@ -1,37 +1,49 @@
 import { getRepository } from 'typeorm';
+import { hash } from 'bcryptjs';
+import AppError from '../errors/AppError';
 import User from '../models/User';
 
 interface Request {
   name: string;
   phone: string;
   plan: string;
+  email: string;
   password: string;
 }
 class CreateUserService {
-  public async execute({ name, phone, plan ,password}: Request): Promise<User> {
+  public async execute({
+    name,
+    phone,
+    plan,
+    email,
+    password,
+  }: Request): Promise<User> {
     /** Creted of the user  respository */
     const usersReposiotory = getRepository(User);
 
     /** Created business  rules */
     const checkUserExists = await usersReposiotory.findOne({
-      where: { name },
+      where: { email },
     });
 
+    const hashPassword = await hash(password, 8);
+
     if (checkUserExists) {
-      throw new Error('Email address alredy used');
+      throw new AppError('Email address alredy used');
     }
 
     const user = usersReposiotory.create({
       name,
       plan,
       phone,
-      password,
+      email,
+      password: hashPassword,
     });
 
     await usersReposiotory.save(user);
 
     delete user.password;
-    
+
     return user;
   }
 }

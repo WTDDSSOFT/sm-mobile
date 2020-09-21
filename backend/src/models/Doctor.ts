@@ -15,14 +15,17 @@ class Doctor {
   name: string;
 
   @Column()
+  email: string;
+
+  @Column()
   crm: string;
 
   @Column()
   specialization: string;
-  
+
   @Column()
   password: string;
-  
+
   @CreateDateColumn()
   created_at: Date;
 
