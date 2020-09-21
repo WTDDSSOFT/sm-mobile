@@ -41,12 +41,12 @@
 - docker start nome do container.
 
 # APi
- - stacks: Node.js, jwt, typeorm, Rest, express, autenticação dos users e doctors
+- stacks: Node.js, jwt, typeorm, Rest, express, autenticação dos users e doctors
 - yarn install
-  ## Migrations
+- Migrations
     - yarn typeorm migrations:run
 
 # React-Native
-  yarn start
-  yarn android.
+  - yarn start
+  - yarn android.
   
